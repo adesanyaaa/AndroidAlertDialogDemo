@@ -17,13 +17,13 @@ class AndroidAlertDialogActivity : AppCompatActivity() {
 
         val addContactDialog = AlertDialog.Builder(this)
             .setTitle("Add Contact")
-            .setMessage("Do you want to add Joe Block to your contacts list?")
+            .setMessage("Do you want to add Joe Block to your contact list?")
             .setIcon(R.drawable.ic_person_add)
             .setPositiveButton("Yes") { dialogInterface, i ->
-                Toast.makeText(this, "You added Joe Block to your contacts list", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "You added Joe Block to your contact list", Toast.LENGTH_SHORT).show()
             }
             .setNegativeButton("No") { dialogInterface, i ->
-                Toast.makeText(this, "You did not added Joe Block to your contacts list",
+                Toast.makeText(this, "You did not added Joe Block to your contact list",
                     Toast.LENGTH_SHORT).show()
             }.create()
 
